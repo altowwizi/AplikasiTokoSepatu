@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".TotalPembayaran">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/struct_logo" />
+
+                <TextView
+                    android:id="@+id/dataPembeliStruk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/carTanda"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="18dp"
+                    android:text="DATA PEMBELI" />
+
+                <TextView
+                    android:id="@+id/carTanda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgLogo"
+                    android:text="==============================================" />
+
+                <TextView
+                    android:id="@+id/namaPembeli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_below="@id/dataPembeliStruk"
+                    android:layout_marginBottom="5dp"
+                    android:text="Nama                      : " />
+
+                <TextView
+                    android:id="@+id/nomorPembeli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/namaPembeli"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:text="No. Hp                    : " />
+
+                <TextView
+                    android:id="@+id/alamatPembeli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nomorPembeli"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="100dp"
+                    android:text="Alamat Pembeli    : " />
+
+                <TextView
+                    android:id="@+id/pemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/namaPembeli"
+                    android:layout_below="@id/dataPembeliStruk"
+                    android:hint="Nama Pembeli" />
+
+                <TextView
+                    android:id="@+id/pemNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/namaPembeli"
+                    android:layout_toRightOf="@+id/nomorPembeli"
+                    android:hint="Nomor Pembeli" />
+
+                <TextView
+                    android:id="@+id/pemAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nomorPembeli"
+                    android:layout_toRightOf="@+id/alamatPembeli"
+                    android:hint="Alamat Pembeli" />
+
+                <TextView
+                    android:id="@+id/carTand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/pemAlamat"
+                    android:text="==============================================" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hrsBayar"
+            android:layout_marginTop="270dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginBottom="15dp"
+            android:text="DATA PEMBAYARAN" />
+
+        <TextView
+            android:id="@+id/totpemProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hrsBayar"
+            android:textStyle="bold"
+            android:text="Nama Product  : " />
+
+        <TextView
+            android:id="@+id/namapemProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hrsBayar"
+            android:layout_toRightOf="@+id/totpemProduct"
+            android:hint="Nama Product" />
+
+        <TextView
+            android:id="@+id/hargapemProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/totpemProduct"
+            android:text="Harga                 : " />
+
+        <TextView
+            android:id="@+id/hargapemnorProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/namapemProduct"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/hargapemProduct"
+            android:hint="Harga Satuan" />
+
+        <TextView
+            android:id="@+id/qtypemProduct"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hargapemProduct"
+            android:text="Qty                      : " />
+
+        <TextView
+            android:id="@+id/qtytotpemProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hargapemProduct"
+            android:layout_toRightOf="@+id/qtypemProduct"
+            android:layout_marginTop="10dp"
+            android:hint="Total Qty" />
+
+        <TextView
+            android:id="@+id/hartotpemProduct"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qtypemProduct"
+            android:text="Total Harga       : " />
+
+        <TextView
+            android:id="@+id/nilaitotpemProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/qtypemProduct"
+            android:layout_toRightOf="@id/hartotpemProduct"
+            android:hint="Total Harga Barang" />
+        <TextView
+            android:id="@+id/carTando"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/nilaitotpemProduct"
+            android:text="==============================================" />
+
+        <TextView
+            android:id="@+id/infoCall"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nilaitotpemProduct"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textSize="14dp"
+            android:text="Info Hubungi Call Center 123 atau Hubungi ALTN Shoes Terdekat" />
+
+        <Button
+            android:id="@+id/cetak"
+            android:layout_below="@id/carTando"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="CETAK"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="80dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/backPayNow"
+            android:layout_width="120dp"
+            android:layout_below="@id/carTando"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_toRightOf="@id/cetak"
+            android:text="Kembali" />
+    </RelativeLayout>
+
+
+</LinearLayout>

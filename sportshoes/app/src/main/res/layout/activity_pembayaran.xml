@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pembayaran"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/orderProduct"
+        android:background="@drawable/palete_container"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/prdctName"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Nama Produk" />
+
+        <TextView
+            android:id="@+id/nameProduct"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prdctName"
+            android:textColor="@color/black"
+            android:hint="Product" />
+
+        <TextView
+            android:id="@+id/pricePrdct"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/prdctName"
+            android:textColor="@color/black"
+            android:text="Price" />
+
+        <TextView
+            android:id="@+id/totPrice"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pricePrdct"
+            android:layout_toRightOf="@id/nameProduct"
+            android:textColor="@color/black"
+            android:hint="Price" />
+
+        <TextView
+            android:id="@+id/qtyPrdct"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pricePrdct"
+            android:textColor="@color/black"
+            android:text="Qty" />
+
+        <TextView
+            android:id="@+id/qtyTotal"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qtyPrdct"
+            android:layout_toRightOf="@+id/totPrice"
+            android:textColor="@color/black"
+            android:hint="Qty" />
+
+        <TextView
+            android:id="@+id/totHarga"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/qtyPrdct"
+            android:textColor="@color/black"
+            android:text="Total Harga" />
+
+        <TextView
+            android:id="@+id/harTot"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/totHarga"
+            android:layout_toRightOf="@+id/qtyTotal"
+            android:textColor="@color/black"
+            android:hint="All Price" />
+
+        <LinearLayout
+            android:id="@+id/dataPembeliLayout"
+            android:layout_width="match_parent"
+            android:layout_below="@id/nameProduct"
+            android:layout_marginTop="30dp"
+            android:layout_height="20dp"
+            android:textColor="@color/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dataPembeli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Data Pembeli" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/enterLayout"
+            android:layout_width="match_parent"
+            android:layout_below="@id/dataPembeliLayout"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/enterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:ems="9"
+                android:textColor="@color/black"
+                android:inputType="textPersonName"
+                android:hint="Enter Name" />
+
+            <EditText
+                android:id="@+id/enterPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enterName"
+                android:ems="9"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:hint="Enter No. Hp"
+                android:textColor="@color/black"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/enterAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/enterPhone"
+                android:textColor="@color/black"
+                android:ems="9"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:hint="Enter Alamat Pengirim"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/noRek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="Silahkan Anda Membayar ke Nomor Rekening : 5367746744 Sejumlah Harga Diatas" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/payNow"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Bayar"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="80dp"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
+
+                    <Button
+                        android:id="@+id/backPay"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@id/payNow"
+                        android:text="Kembali" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
